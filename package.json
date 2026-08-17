@@ -1,0 +1,25 @@
+{
+  "name": "comment-reply-ai",
+  "version": "1.0.0",
+  "description": "AI tool for auto-replying Instagram comments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zyloxia/comment-reply-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Zyloxia/comment-reply-ai/issues"
+  },
+  "homepage": "https://github.com/Zyloxia/comment-reply-ai#readme",
+  "dependencies": {
+    "@google/genai": "^2.17.1",
+    "dotenv": "^17.4.2"
+  }
+}
