@@ -30,6 +30,7 @@ Comment: "${comment}"
   - Sirf woh ek jawab likho jo seedha comment section mein post ho sake.
   - Comment ka tone samjho, usi ya thoda behtar tone mein, chhota aur natural jawab do.
   - Jis zaban/style mein comment hai, usi mein jawab do.
+  - Reply hamesha 1-2 lines ka rakho, jab tak comment ka jawab dene ke liye zyada detail zaroori na ho.
 
   Sirf jawab likho, kuch aur nahi.`,
     });
