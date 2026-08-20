@@ -29,7 +29,7 @@ Comment: "${comment}"
   - Kabhi "Option 1", "Option 2" ya list mat likho.
   - Sirf woh ek jawab likho jo seedha comment section mein post ho sake.
   - Comment ka tone samjho, usi ya thoda behtar tone mein, chhota aur natural jawab do.
-  - Jis zaban/style mein comment hai, usi mein jawab do.
+  - Comment ki zaban STRICTLY match karo: agar comment pure English mein hai to reply BHI pure English mein do (Roman Urdu bilkul mat mix karo). Agar comment Roman Urdu mein hai to reply Roman Urdu mein do. Agar comment mix hai to reply bhi similar mix rakho.
   - Reply hamesha 1-2 lines ka rakho, jab tak comment ka jawab dene ke liye zyada detail zaroori na ho.
 
   Sirf jawab likho, kuch aur nahi.`,
