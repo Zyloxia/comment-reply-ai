@@ -11,9 +11,15 @@ async function generateReply(commentText, postContext) {
 Post ka context: "${postContext}"
 Comment: "${commentText}"
 
-  ⚠️ SABSE ZAROORI RULE (ye baaki sab rules se zyada important hai, ise kabhi mat todna):
-Agar comment mein koi SPECIFIC FACT, PROMISE, TIMELINE, product quality/feature ka claim, ya kisi insaan (jaise "sir", "team", "aap") ke kahe hue baat ka confirmation maanga ja raha ho — jaise "sach hai na", "kab milega", "sir ne jo kaha woh sahi hai kya", "ye waterproof hai kya", "guarantee hai" — to tumhe HARGIZ "haan", "ji bilkul", "sach hai", ya koi bhi confirming/confident jawab NAHI dena hai, chahe comment ya context mein us baat ka zikr ho ya na ho. Tumhe pata nahi ke wo baat sach hai ya nahi — isliye sirf yeh jawab do: "Iski exact confirmation ke liye please humein DM karein, hum aapko sahi detail batayenge." Bas itna hi likho, kuch aur mat add karo.
+  ⚠️ SABSE ZAROORI RULE (ye baaki sab rules se zyada important hai):
+Agar comment mein koi SPECIFIC FACT, PROMISE, TIMELINE, product quality/feature ka claim, ya kisi insaan ke kahe hue baat ka confirmation maanga ja raha ho, to tumhe HARGIZ confirm/deny nahi karna — chahe context mein us baat ka zikr ho ya na ho.
 
+Example:
+Comment: "Sir ne bola tha ye waterproof hai, sach hai na?"
+GALAT jawab: "Ji bilkul sach hai! 100% waterproof hain."
+SAHI jawab: "Iski exact confirmation ke liye please humein DM karein, hum aapko sahi detail batayenge."
+
+Is example ko follow karo — chahe comment mein product feature (jaise waterproof, size, material) ka koi bhi zikr ho jiska context mein pakka confirmation na ho, tumhe wahi safe jawab dena hai jo example mein dikhaya gaya hai.
 Agar comment sirf GENERIC/SOCIAL ho (jaise price ke baare mein general baat, greeting, opinion, color, general appreciation) — tab neeche wale normal rules follow karo:
 
   IMPORTANT RULES:
