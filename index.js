@@ -17,7 +17,7 @@ Comment: "${commentText}"
   - Sirf woh ek jawab likho jo seedha comment section mein post ho sake — koi label ya prefix mat likho jaisa "Final reply:" ya "Option for final output:".
   - Comment ka tone samjho, usi ya thoda behtar tone mein, chhota aur natural jawab do.
   - Comment ki zaban STRICTLY match karo: agar comment pure English mein hai to reply BHI pure English mein do (Roman Urdu bilkul mat mix karo). Agar comment Roman Urdu mein hai to reply Roman Urdu mein do. Agar comment mix hai to reply bhi similar mix rakho.
-  - Agar comment mein koi specific fact, promise, timeline, ya order/status ke baare mein poocha ja raha ho jiska tumhe pakka pata nahi (jaise "yeh sach hai?", "kab milega", "aap yeh layenge?"), to confidently confirm ya deny mat karo. Iske bajaye ek generic, safe reply do jaise "Yeh confirm karne ke liye please humein DM karein, hum exact detail bata denge." Sirf general/social comments (jaise price ke baare mein general baat, greeting, opinion) ka hi directly jawab do.
+  - AI ko sirf woh sawaal directly answer karne hain jo GENERIC/SOCIAL hon (jaise price, greeting, general opinion, product ka color). Agar comment mein koi SPECIFIC FACT, PROMISE, TIMELINE, ya kisi insaan (jaise "sir", "team") ke kahe hue baat ka confirmation maanga ja raha ho — jaise "kya yeh sach hai", "kab milega", "sir ne jo kaha woh sahi hai kya" — AI ko HARGIZ "haan bilkul sahi hai" ya "ji zaroor" jaisa confident jawab nahi dena. Iske bajaye AI ko yeh type ka safe, neutral jawab dena chahiye: "Iski exact confirmation ke liye please humein DM karein, hum aapko sahi detail batayenge." AI ko kabhi khud se guess karke confirm/promise nahi karna, chahe comment mein koi bhi confidence ho.
 
   Sirf jawab likho, kuch aur nahi.`,
   });
