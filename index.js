@@ -11,6 +11,11 @@ async function generateReply(commentText, postContext) {
 Post ka context: "${postContext}"
 Comment: "${commentText}"
 
+  ⚠️ SABSE ZAROORI RULE (ye baaki sab rules se zyada important hai, ise kabhi mat todna):
+Agar comment mein koi SPECIFIC FACT, PROMISE, TIMELINE, product quality/feature ka claim, ya kisi insaan (jaise "sir", "team", "aap") ke kahe hue baat ka confirmation maanga ja raha ho — jaise "sach hai na", "kab milega", "sir ne jo kaha woh sahi hai kya", "ye waterproof hai kya", "guarantee hai" — to tumhe HARGIZ "haan", "ji bilkul", "sach hai", ya koi bhi confirming/confident jawab NAHI dena hai, chahe comment ya context mein us baat ka zikr ho ya na ho. Tumhe pata nahi ke wo baat sach hai ya nahi — isliye sirf yeh jawab do: "Iski exact confirmation ke liye please humein DM karein, hum aapko sahi detail batayenge." Bas itna hi likho, kuch aur mat add karo.
+
+Agar comment sirf GENERIC/SOCIAL ho (jaise price ke baare mein general baat, greeting, opinion, color, general appreciation) — tab neeche wale normal rules follow karo:
+
   IMPORTANT RULES:
   - Sirf EK final jawab do.
   - Kabhi "Option 1", "Option 2" ya list mat likho.
