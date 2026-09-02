@@ -3,6 +3,27 @@ const { GoogleGenAI } = require('@google/genai');
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
+// Ye trigger phrases dhoondte hain jab koi comment kisi fact/promise ka confirmation maang raha ho
+const RISKY_PATTERNS = [
+  /sach\s*h(ai)?/i,
+  /true\s*(right|na)?/i,
+  /confirm/i,
+  /guarantee/i,
+  /promise/i,
+  /sir\s*ne\s*(bola|kaha)/i,
+  /team\s*ne\s*(bola|kaha)/i,
+  /aap\s*ne\s*(bola|kaha)/i,
+  /is\s*this\s*true/i,
+  /you\s*(said|promised|guaranteed)/i,
+  /(sahi|shi)\s*h(ai)?\s*(na|kya)?/i,
+];
+
+const SAFE_FALLBACK_REPLY = "Iski exact confirmation ke liye please humein DM karein, hum aapko sahi detail batayenge.";
+
+function isRiskyComment(comment) {
+  return RISKY_PATTERNS.some((pattern) => pattern.test(comment));
+}
+
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' });
@@ -17,6 +38,11 @@ module.exports = async (req, res) => {
       return;
     }
 
+    if (isRiskyComment(comment)) {
+      res.status(200).json({ reply: SAFE_FALLBACK_REPLY });
+      return;
+    }
+
     const interaction = await ai.interactions.create({
       model: 'gemini-3.6-flash',
       input: `Tum ek Instagram business page ke comments ka jawab de rahi ho.
@@ -27,10 +53,9 @@ Comment: "${comment}"
   IMPORTANT RULES:
   - Sirf EK final jawab do.
   - Kabhi "Option 1", "Option 2" ya list mat likho.
-  - Sirf woh ek jawab likho jo seedha comment section mein post ho sake.
+  - Sirf woh ek jawab likho jo seedha comment section mein post ho sake — koi label ya prefix mat likho.
   - Comment ka tone samjho, usi ya thoda behtar tone mein, chhota aur natural jawab do.
-  - Comment ki zaban STRICTLY match karo: agar comment pure English mein hai to reply BHI pure English mein do (Roman Urdu bilkul mat mix karo). Agar comment Roman Urdu mein hai to reply Roman Urdu mein do. Agar comment mix hai to reply bhi similar mix rakho.
-  - Reply hamesha 1-2 lines ka rakho, jab tak comment ka jawab dene ke liye zyada detail zaroori na ho.
+  - Comment ki zaban STRICTLY match karo: agar comment pure English mein hai to reply BHI pure English mein do. Agar comment Roman Urdu mein hai to reply Roman Urdu mein do.
 
   Sirf jawab likho, kuch aur nahi.`,
     });
